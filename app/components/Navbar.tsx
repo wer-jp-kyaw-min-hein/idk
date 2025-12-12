@@ -65,7 +65,7 @@ export default function Navbar() {
                 {categories.map((category) => (
                   <Link
                     key={category}
-                    href={`/category/${category.toLowerCase()}`}
+                    href={`/category/${category.name.toLowerCase()}`}
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     {category}
