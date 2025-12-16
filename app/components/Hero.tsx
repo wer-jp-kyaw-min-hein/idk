@@ -20,7 +20,7 @@ export default function Hero({
     primaryCtaHref = "/products",
     secondaryCtaText = "Browse Categories",
     secondaryCtaHref = "/categories",
-    imageSrc = "/hero-image.jpg", // put a banner image in/public/hero.jpg
+    imageSrc = "/hero.jpg", // put a banner image in/public/hero.jpg
 }: HeroProps) {
     return (
         <section className="w-full">
