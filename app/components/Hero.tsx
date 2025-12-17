@@ -23,8 +23,55 @@ export default function Hero({
     imageSrc = "/hero.jpg", // put a banner image in/public/hero.jpg
 }: HeroProps) {
     return (
-        <section className="w-full">
-            <div className="relative w-full overflow-hidden">
+        <section className="w-full bg-white py-12">
+            <div className="mx-auto max-w-7xl px-4">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 items-start">
+
+                {/* LEFT: Poster */}
+                <div className="flex justify-center">
+                    <div className="rounded-2xl shadow-xl overflow-hidden">
+                        <Image
+                        src="/promo-8000.jpg"
+                        alt="Lion Mart Promotion"
+                        width={420}
+                        height={600}
+                        className="object-cover"
+                        priority
+                        />
+                        </div>
+                        </div>  
+
+                {/* RIGHT: Hero Banner */}
+                <div className="text-left">
+                    <p className="text-sm font-semibold text-gray-600 mb-2">
+                        ¥8000以上のご注文で <span className="text-red-600">FREE</span>
+                    </p>
+
+                    <h1 className="text-3xl font-extrabold text-gray-900 mb-4">
+                        Lion Mart 配送キャンペーン
+                    </h1>
+
+                    <div className="space-y-3 text-sm leading-relaxed text-red-700">
+                        <p>
+                            Lion Mart のオンラインストアでは、¥3,000〜¥8,000 の
+                            ご注文で地域別配送料が適用されます。
+                        </p>
+
+                        <p>
+                        ¥8,000以上のご注文で送料無料。
+                        足立区竹の塚周辺（5km）対象。
+                        </p>
+
+                        <p>
+                        COD 手数料 ¥500。沖縄・離島は対象外。
+                        </p>
+
+                        <p className="text-xs text-gray-500 mt-4">
+                            * Terms & Conditions apply
+                        </p>
+                    </div>
+                </div>
+                </div>
                 {/* Background Image */}
             <div className="relative h-[260px] sm:h [360px] md:h-[460px] w-full">
                 <Image
