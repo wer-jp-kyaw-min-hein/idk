@@ -1,10 +1,12 @@
 import Hero from './components/Hero';
+import Collections from './components/Collections';
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <Hero />
+      <Collections />
 
     {/* Temporary content below the Hero */}
     <section className="flex flex-col items-center justify-center p-8">
